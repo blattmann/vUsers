@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+// Import configuration
+import config from '../config'
+
 Vue.use(Router)
 
 // App components
@@ -12,7 +15,7 @@ export default new Router({
   mode: 'history',
   base: __dirname,
   routes: [
-    {path:'/', component: About},
+    {path: '/', component: About},
     {path: '/users', component: Users},
     {path: '/user/:id', component: User}
   ]
