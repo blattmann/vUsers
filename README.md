@@ -2,7 +2,7 @@
 
 > Vue.js Test Project
 
-Preview: [Link](http://vusers.stefan-blattmann.com/ "title" target="_blank")
+Preview: [http://vusers.stefan-blattmann.com/](http://vusers.stefan-blattmann.com/){:target="_blank"}
 
 ## Basic requirements if you want to start your own project with vue.js (CLI recommended)
 
