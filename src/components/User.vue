@@ -1,34 +1,34 @@
 <template>
   <div class="details container">
-    <router-link to="/">Back</router-link>
+    <router-link to="/">Back to the list</router-link>
     <div v-if="user">
       <h1 v-if="user.name" class="page-header">{{user.name}}</h1>
 
       <ul class="list-group">
         <li v-if="user.phone" class="list-group-item">
           <span class="col-xs-1 glyphicon glyphicon-phone" aria-hidden="true"></span>
-          <span class="col-xs-11">{{user.phone}}</span>
+          <span class="col-xs-10">{{user.phone}}</span>
         </li>
         <li v-if="user.email" class="list-group-item">
           <span class="col-xs-1 glyphicon glyphicon-envelope" aria-hidden="true"></span>
-          <span class="col-xs-11">{{user.email}}</span>
+          <span class="col-xs-10">{{user.email}}</span>
         </li>
         <li v-if="user.website" class="list-group-item">
           <span class="col-xs-1 glyphicon glyphicon-home" aria-hidden="true"></span>
-          <span class="col-xs-11">{{user.website}}</span>
+          <span class="col-xs-10">{{user.website}}</span>
         </li>
       </ul>
 
       <ul class="list-group">
         <li class="list-group-item" v-if="user.address.street">
           <i class="col-xs-1 fa fa-road" aria-hidden="true"></i>
-          <span class="col-xs-11">{{user.address.street}}</span>
+          <span class="col-xs-10">{{user.address.street}}</span>
         </li>
         <li class="list-group-item" v-if="user.address.zipcode && user.address.city">
-          <i class="col-xs-1 fa fa-map-marker" aria-hidden="true"></i> <span class="col-xs-11">{{user.address.zipcode}} {{user.address.city}}</span>
+          <i class="col-xs-1 fa fa-map-marker" aria-hidden="true"></i> <span class="col-xs-10">{{user.address.zipcode}} {{user.address.city}}</span>
         </li>
         <li class="list-group-item" v-else-if="user.address.city">
-          <i class="col-xs-1 fa fa-map-marker" aria-hidden="true"></i> <span class="col-xs-11">{{user.address.city}}</span>
+          <i class="col-xs-1 fa fa-map-marker" aria-hidden="true"></i> <span class="col-xs-10">{{user.address.city}}</span>
         </li>
       </ul>
     </div>

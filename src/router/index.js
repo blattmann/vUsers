@@ -15,8 +15,8 @@ export default new Router({
   mode: 'history',
   base: __dirname,
   routes: [
-    {path: '/', component: About},
-    {path: '/users', component: Users},
-    {path: '/user/:id', component: User}
+    {path: '/', component: Users},
+    {path: '/user/:id', component: User},
+    {path: '/about', component: About}
   ]
 })

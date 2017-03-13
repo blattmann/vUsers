@@ -40,7 +40,7 @@
     <table class="table table-striped">
       <thead>
         <tr>
-          <th>Contacted</th>
+          <th>OK</th>
           <th>User</th>
           <th>Email</th>
           <th>Delete</th>
@@ -51,7 +51,7 @@
           <td><input type="checkbox" class="toggle" v-model="user.contacted"></td>
           <td v-if="user.id"><router-link v-bind:to="'/user/'+user.id">{{user.name}}</router-link></td>
           <td v-else>{{user.name}}</td>
-          <td>{{user.email}}</td>
+          <td class="td-email">{{user.email}}</td>
           <td><button v-on:click="deleteUser(user)">x</button></td>
         </tr>
       </tbody>
@@ -137,5 +137,14 @@
 
   .submitted {
     color: #4fc08d;
+  }
+
+  @media (max-width: 767px) {
+    .td-email {
+      max-width: 95px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 </style>
