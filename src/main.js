@@ -1,15 +1,38 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+// Core components
 import Vue from 'vue'
-import App from './App'
+import vueResource from 'vue-resource'
+import VeeValidate from 'vee-validate'
+
+// Import router
 import router from './router'
 
-Vue.config.productionTip = false
+Vue.use(vueResource)
+Vue.use(VeeValidate)
 
-/* eslint-disable no-new */
 new Vue({
-  el: '#app',
   router,
-  template: '<App/>',
-  components: { App }
-})
+  template: `
+    <div id="navigation">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">vUsers</a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><router-link to="/">About</router-link></li>
+              <li><router-link to="/users">Users</router-link></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+      <router-view></router-view>
+    </div>
+  `,
+}).$mount('#app')
