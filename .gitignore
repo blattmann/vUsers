@@ -22,7 +22,7 @@ webSqlApp
 dev/www/sync
 beacons
 testapps
-dist/
+#dist/
 dev/www/css
 upload/
 public/*
