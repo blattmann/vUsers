@@ -8,27 +8,27 @@ self.__precacheManifest = [
     "url": "/vUsers/robots.txt"
   },
   {
-    "revision": "12787daba649a5a292b7",
-    "url": "/vUsers/js/chunk-vendors.e4550aa1.js"
+    "revision": "7e86baca69f9271949de",
+    "url": "/vUsers/js/chunk-vendors.5377fc0d.js"
   },
   {
     "revision": "9e3a7b4d90c79b0b3b7a",
     "url": "/vUsers/js/chunk-cd4e72f6.a34f1329.js"
   },
   {
+    "revision": "c7a7590ee379a1dcb7cf",
+    "url": "/vUsers/js/chunk-a5d0f5f8.a5919f73.js"
+  },
+  {
     "revision": "1cba319fd2a102a4aa72",
     "url": "/vUsers/js/chunk-22794cb2.47832988.js"
   },
   {
-    "revision": "48b4359af62f531145c5",
-    "url": "/vUsers/js/chunk-025fda7c.7f7a4951.js"
+    "revision": "033e2c6366c6dbdad7f3",
+    "url": "/vUsers/js/app.cff98a68.js"
   },
   {
-    "revision": "367acc2f416d5177db53",
-    "url": "/vUsers/js/app.34936ed4.js"
-  },
-  {
-    "revision": "93a6090edf91828ab7d89f7a0cb4b43d",
+    "revision": "9c2690c69d1af378ecb7224a250a9d11",
     "url": "/vUsers/index.html"
   },
   {
