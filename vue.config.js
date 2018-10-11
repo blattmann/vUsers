@@ -1,19 +1,15 @@
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 const WebpackNotifierPlugin = require('webpack-notifier')
-const path = require('path')
+
+const NewPath = function() {
+  return {
+    baseUrl: '/vUsers/'
+  }
+}
 
 module.exports = {
-  // css: {
-  //   loaderOptions: {
-  //     sass: {
-  //       data: `@import "@/sass/main.scss";`
-  //     }
-  //   }
-  // },
-
-  // output directory & baseUrl for github pages. comment to keep the default directory ("dist")
+  // baseUrl for github pages. comment to keep the default baseUrl ("/")
   baseUrl: '/vUsers/',
-  outputDir: path.resolve(__dirname, './docs/'),
 
   configureWebpack: config => {
     if (process.env.NODE_ENV === 'production') {

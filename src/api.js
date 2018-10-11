@@ -8,16 +8,12 @@ const config = {
 export default {
   getAllUsers() {
     const userUrl = `${config.jsonUrl}/`
-    // console.log('userUrl: ', userUrl)
     const res = axios.get(userUrl)
-    // console.log('res: ', res)
     return res
   },
   getSingleUser(id) {
     const userUrl = `${config.jsonUrl}/${id}`
-    console.log('userUrl: ', userUrl)
     const res = axios.get(userUrl)
-    // console.log('res: ', res)
     return res
   }
 }
