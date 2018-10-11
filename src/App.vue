@@ -11,7 +11,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/about">vUsers</a>
+            <router-link class="navbar-brand" to="/about">vUsers</router-link>
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -28,6 +28,3 @@
 
   </div>
 </template>
-
-<style lang="scss">
-</style>

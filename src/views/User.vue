@@ -43,8 +43,6 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 // Import api queries
 import api from '@/api'
 

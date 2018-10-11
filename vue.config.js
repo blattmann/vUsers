@@ -10,7 +10,9 @@ module.exports = {
   //     }
   //   }
   // },
-  // output directory for github pages. comment to keep the default directory ("dist")
+
+  // output directory & baseUrl for github pages. comment to keep the default directory ("dist")
+  baseUrl: '/vUsers/',
   outputDir: path.resolve(__dirname, './docs/'),
 
   configureWebpack: config => {
