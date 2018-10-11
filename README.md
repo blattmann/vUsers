@@ -2,7 +2,7 @@
 
 > Vue.js: Simple User management
 
-Preview: [https://vusers.netlify.com/](https://vusers.netlify.com/)
+Preview: [https://blattmann.github.io/vUsers/](https://blattmann.github.io/vUsers/)
 
 ## Basic requirements if you want to start your own project with vue.js (CLI recommended)
 
