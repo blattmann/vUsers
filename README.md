@@ -2,7 +2,7 @@
 
 > Vue.js Test Project
 
-Preview: http://vusers.stefan-blattmann.com/
+Preview: https://vusers.netlify.com/
 
 ## Basic requirements if you want to start your own project with vue.js (CLI recommended)
 
