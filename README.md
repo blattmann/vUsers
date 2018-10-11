@@ -1,12 +1,12 @@
-# vusers
+# vusers v2.0
 
-> Vue.js Test Project
+> Vue.js: Simple User management
 
-Preview: http://vusers.stefan-blattmann.com/
+Preview: [https://vusers.netlify.com/](https://vusers.netlify.com/)
 
 ## Basic requirements if you want to start your own project with vue.js (CLI recommended)
 
-``` bash
+```bash
 # install Vue CLI
 $ npm install -g vue-cli
 
@@ -30,7 +30,7 @@ $ npm run build
 
 ## Build Setup for THIS project
 
-``` bash
+```bash
 # install dependencies
 $ npm install
 
@@ -43,5 +43,3 @@ $ npm run build
 # build for production and view the bundle analyzer report
 $ npm run build --report
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

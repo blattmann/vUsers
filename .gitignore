@@ -1,27 +1,21 @@
-# Specifies intentionally untracked files to ignore when using Git
-# http://git-scm.com/docs/gitignore
-
 .DS_Store
-npm-debug.log
-yarn-error.log
+node_modules
+/dist
 
-_old
-_tools
-_work
-ionic
+# local env files
+.env.local
+.env.*.local
 
-node_modules/
-dev/platforms/
-dev/plugins/
-push
-copy
-offline-sync
-ionFullApp
-rcstest
-webSqlApp
-dev/www/sync
-beacons
-testapps
-dev/www/css
-upload/
-public/*
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
