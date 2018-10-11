@@ -11,7 +11,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/about">vUsers</a>
+            <a class="navbar-brand" :href="env === 'develop' ? '/about' : '/vUsers/about'">vUsers</a>
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -29,5 +29,24 @@
   </div>
 </template>
 
-<style lang="scss">
-</style>
+<script>
+export default {
+  name: 'app',
+  data() {
+    return {
+      env: ''
+    }
+  },
+  created() {
+    const host = window.location.host.split('.')[0]
+    let environment = 'production'
+
+    console.log('host: ', host)
+
+    if (host.indexOf('localhost') >= 0 || host.indexOf('develop') >= 0 || host.indexOf('stage') >= 0) {
+      environment = 'develop'
+    }
+    console.log('environment: ', environment)
+  }
+}
+</script>

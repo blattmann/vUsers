@@ -68,8 +68,6 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 // Import api queries
 import api from '@/api'
 
@@ -138,7 +136,7 @@ export default {
       vm.formSubmitted = false
       vm.collapsed = true
     },
-    validateBeforeSubmit(e) {
+    validateBeforeSubmit() {
       const vm = this
       vm.$validator.validateAll()
       if (!vm.errors.any()) {
