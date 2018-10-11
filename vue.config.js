@@ -1,12 +1,6 @@
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 const WebpackNotifierPlugin = require('webpack-notifier')
 
-const NewPath = function() {
-  return {
-    baseUrl: '/vUsers/'
-  }
-}
-
 module.exports = {
   // baseUrl for github pages. comment to keep the default baseUrl ("/")
   baseUrl: '/vUsers/',
