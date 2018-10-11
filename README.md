@@ -1,4 +1,4 @@
-# vusers
+# vusers v2.0
 
 > Vue.js Test Project
 
@@ -6,7 +6,7 @@ Preview: http://vusers.stefan-blattmann.com/
 
 ## Basic requirements if you want to start your own project with vue.js (CLI recommended)
 
-``` bash
+```bash
 # install Vue CLI
 $ npm install -g vue-cli
 
@@ -30,7 +30,7 @@ $ npm run build
 
 ## Build Setup for THIS project
 
-``` bash
+```bash
 # install dependencies
 $ npm install
 
